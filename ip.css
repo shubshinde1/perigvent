@@ -1,0 +1,81 @@
+@font-face {
+    font-family: productsansbld;
+    src: url(src/Product\ Sans\ Bold.ttf);
+}
+
+@font-face {
+    font-family: productsans;
+    src: url(src/Product\ Sans\ Regular.ttf);
+}
+
+@font-face {
+    font-family: interlight;
+    src: url(src/Inter-Light.ttf);
+}
+
+@font-face {
+    font-family: intermedium;
+    src: url(src/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: interregular;
+    src: url(src/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: interbold;
+    src: url(src/Inter-Bold.ttf);
+}
+
+
+
+.productsansbld {
+    font-family: productsansbld;
+}
+
+.productsans {
+    font-family: productsans;
+}
+
+.interlight {
+    font-family: interlight;
+}
+
+.intermedium {
+    font-family: intermedium;
+}
+
+.interregular {
+    font-family: interregular;
+}
+
+.interbold {
+    font-family: interbold;
+}
+
+
+:hover.logo {
+    scale: 1.03;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+:hover.gitbtn {
+    scale: 1.05;
+    transition-duration: 0.8s;
+}
+
+:hover.tile {
+    scale: 1.06;
+    transition-duration: 0.8s;
+}
+
+/* .hding::before {
+    content: "";
+    display: flex;
+    width: 50%;
+    height: 1px;
+    background-color: black;
+    margin: auto;
+} */

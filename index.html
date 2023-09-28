@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preigvent</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="ip.css" />
+</head>
+
+<body>
+  <style>
+    .navbar-brand img {
+      max-height: 40px;
+    }
+
+    .navbar-nav .nav-item {
+      margin: 0 10px;
+    }
+
+    .navbar-nav .nav-link {
+      color: #000000;
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #000000;
+      font-family: interregular;
+    }
+
+    .get-demo-button {
+      margin-left: auto;
+    }
+
+    @media (max-width: 767px) {
+      .navbar-nav .nav-link {
+        color: #ffffff;
+        font-weight: normal;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Set height of body and the document to 100% */
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial;
+      font-family: "Inter", sans-serif;
+    }
+
+    /* Style tab links */
+    .tablink {
+      background-color: #fff4e5;
+      /* color: white; */
+      float: left;
+      border: none;
+      margin-top: 10px;
+      outline: none;
+      cursor: pointer;
+      padding: 10px;
+      font-size: 17px;
+      width: 15%;
+    }
+
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+      display: none;
+      padding: 20px;
+      height: 100%;
+    }
+
+    .container1 {
+      background-color: #fff4e5;
+      border-radius: 10px;
+    }
+
+    button {
+      border-radius: 10px;
+    }
+
+    .img-bg {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 767px) {
+
+      /* Center the buttons on small screens */
+      .tablink {
+        font-size: 8px;
+      }
+    }
+  </style>
+
+  <nav class="container-sm mx-auto  py-3 navbar navbar-expand-md row fixed-top justify-content-around"
+    style="background-color: rgba(255, 255, 255, 0.4); backdrop-filter: blur(40px);">
+    <div class="col-12 col-md-3 col-xl-2 d-flex flex-row">
+      <a href="#" class="navbar-brand ms-4">
+        <img src="img/Perigvent_Logo 1.png" class="logo" alt="Logo" />
+      </a>
+      <button style="border: none; outline: none;" class="ms-auto me-3 navbar-toggler d-flex d-md-none"
+        data-toggle="collapse" data-target="#navmv">
+        <span class="navbar-toggler-icon d-flex my-auto "></span>
+      </button>
+    </div>
+
+    <div class="col"></div>
+
+    <div id="navmv" class="collapse navmv col-lg-5 col-md-6 d-none d-md-block">
+      <ul class="d-flex flex-row navbar-nav justify-content-around justify-content-center my-auto">
+        <li class="nav-item">
+          <a class="interregular nav-link" href="#">Home</a>
+          <div style="
+                width: 8px;
+                height: 8px;
+                background-color: #e0922f;
+                border-radius: 50%;
+              " class="mx-auto"></div>
+        </li>
+        <li class="nav-item">
+          <a class="interlight nav-link" href="#">AboutUs</a>
+        </li>
+        <li class="nav-item">
+          <a class="interlight nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="interlight nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="interlight nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-2 col-md-3 d-none d-md-block">
+      <!-- <button class=" text-white productsansbld d-flex mx-auto ">Get Demo</button> -->
+      <a href="" style="text-decoration: none">
+        <button style="
+              border: none;
+              background-color: #252F3E;
+              text-decoration: none;
+            " class="gitbtn px-3 py-2 productsansbld text-white rounded-3 d-flex mx-auto">
+          Get Demo
+        </button>
+      </a>
+    </div>
+  </nav>
+
+  <!-- hero section -->
+  <div class="container my-5">
+    <div class="row col-md">
+      <div class="mt-5"></div>
+      <div class="mt-5 d-none d-md-flex"></div>
+
+      <div class="col-12 my-auto col-md-5 justify-content-around">
+        <img src="img/hero img 1.png" class="w-100" alt="" />
+      </div>
+
+      <!-- <div style="z-index: 20;" class="position-absolute">
+        <img src="img/bloobs.jpg" style="z-index: 12; overflow: hidden;" class="w- opacity-50 position-absolute"
+          alt="">
+      </div> -->
+
+      <div class="col-12 col-md-7 my-auto justify-content-around" style="z-index: 1;">
+        <h1 class="productsansbld">
+          Create Amazing Virtual And Personalized Events Right Here
+        </h1>
+        <p class="interlight">
+          Host your complete event online with no compromise. Provide an
+          engaging, relevant and profitable experience for all participants.
+        </p>
+        <a href="">
+          <button style="border: none; background-color: #252F3E"
+            class="gitbtn px-3 py-2 productsansbld text-white rounded-3">
+            GET IN TOUCH
+          </button>
+        </a>
+
+
+
+        <div class="col-12 col-md-12 p-2 justify-content-around d-flex mt-3 mt-md-4 bg-white shadow-lg rounded-3 gap-3">
+          <div style="background-color: #d9d9d9" class="tile rounded-3 d-flex flex-column justify-content-center">
+            <img src="img/vdoicon.png" class="w-25 d-flex justify-content-center mx-auto my-3" alt="icon" />
+            <h6 class="d-flex justify-content-center text-center">
+              Video <br />
+            </h6>
+          </div>
+          <div style="background-color: #d9d9d9" class="tile rounded-3 d-flex flex-column justify-content-center">
+            <img src="img/translatoricon.png" class="w-25 d-flex justify-content-center mx-auto my-3" alt="icon" />
+            <h6 class="d-flex justify-content-center text-center px-2">
+              Dynamic Language
+            </h6>
+          </div>
+          <div style="background-color: #d9d9d9" class="tile rounded-3 d-flex flex-column justify-content-center">
+            <img src="img/liveicon.png" class="w-25 d-flex justify-content-center mx-auto my-3" alt="icon" />
+            <h6 class="d-flex justify-content-center text-center px-2">
+              Live Broadcast
+            </h6>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+    <h5 class="d-flex justify-content-center interbold mt-5 mb-3 ">Our Virtual Event Solutions</h5>
+
+    <div class="container carousel-inner">
+      <div class="carousel-item active">
+        <h1 id="fade"
+          class="  productsansbld bg-black position-absolute d-flex w-100 h-100 rounded-3 align-items-center opacity-50 justify-content-center"
+          style="color: #ffffff; background-color: #19222b">
+          Auditorium
+        </h1>
+        <img src="img/auditorium.jpg" id="imgs" class="rounded-3 d-block w-100" alt="Slide 1" />
+      </div>
+      <div class="carousel-item">
+        <h1 id="fade"
+          class="  productsansbld bg-black position-absolute d-flex w-100 h-100 rounded-3 align-items-center opacity-50 justify-content-center"
+          style="color: #ffffff; background-color: #19222b">
+          Indoor Events
+        </h1>
+        <img src="img/indoor.jpg" id="imgs" class="rounded-3 d-block w-100" alt="Slide 2" />
+      </div>
+      <div class="carousel-item">
+        <h1 id="fade"
+          class="  productsansbld bg-black position-absolute d-flex w-100 h-100 rounded-3 align-items-center opacity-50 justify-content-center"
+          style="color: #ffffff; background-color: #19222b">
+          Outdoor Events
+        </h1>
+        <img src="img/outdoor.jpg" id="imgs" class="rounded-3 d-block w-100" alt="Slide 3" />
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+  <!-- Our Core Feature -->
+  <div class="container" style="margin-top: 70px">
+    <h5 class="d-flex justify-content-center interbold">Our Core Feature</h5>
+    <div class="row d-flex gap-2">
+      <div class="col-3 col-md-2 mx-auto d-flex flex-column justify-content-center py-3">
+        <img src="img/1.png" class="w-50 py-2 mx-auto d-flex justify-content-center tile" alt="icon" />
+        <h5 class="productsansbld fs-6 my-auto py-1 mx-auto text-center">
+          Statistics
+        </h5>
+      </div>
+      <div class="col-3 col-md-2 mx-auto d-flex flex-column justify-content-center py-3">
+        <img src="img/2.png" class="w-50 py-2 mx-auto d-flex justify-content-center tile" alt="icon" />
+        <h5 class="productsansbld fs-6 my-auto py-1 mx-auto text-center">
+          Appointment
+        </h5>
+      </div>
+      <div class="col-3 col-md-2 mx-auto d-flex flex-column justify-content-center py-3">
+        <img src="img/3.png" class="w-50 py-2 mx-auto d-flex justify-content-center tile" alt="icon" />
+        <h5 class="productsansbld fs-6 my-auto py-1 mx-auto text-center">
+          Offer
+        </h5>
+      </div>
+      <div class="col-3 col-md-2 mx-auto d-flex flex-column justify-content-center py-3">
+        <img src="img/4.png" class="w-50 py-2 mx-auto d-flex justify-content-center tile" alt="icon" />
+        <h5 class="productsansbld fs-6 my-auto py-1 mx-auto text-center">
+          Quiz
+        </h5>
+      </div>
+      <div class="col-3 col-md-2 mx-auto d-flex flex-column justify-content-center py-3">
+        <img src="img/5.png" class="w-50 py-2 mx-auto d-flex justify-content-center tile" alt="icon" />
+        <h5 class="productsansbld fs-6 my-auto py-1 mx-auto text-center">
+          Forum
+        </h5>
+      </div>
+
+      <div class="col-3 col-md-2 mx-auto d-flex flex-column justify-content-center py-3">
+        <img src="img/6.png" class="w-50 py-2 mx-auto d-flex justify-content-center tile" alt="icon" />
+        <h5 class="productsansbld fs-6 my-auto py-1 mx-auto text-center">
+          News
+        </h5>
+      </div>
+      <div class="col-3 col-md-2 mx-auto d-flex flex-column justify-content-center py-3">
+        <img src="img/7.png" class="w-50 py-2 mx-auto d-flex justify-content-center tile" alt="icon" />
+        <h5 class="productsansbld fs-6 my-auto py-1 mx-auto text-center">
+          Dynamic Language
+        </h5>
+      </div>
+      <div class="col-3 col-md-2 mx-auto d-flex flex-column justify-content-center py-3">
+        <img src="img/8.png" class="w-50 py-2 mx-auto d-flex justify-content-center tile" alt="icon" />
+        <h5 class="productsansbld fs-6 my-auto py-1 mx-auto text-center">
+          Video
+        </h5>
+      </div>
+      <div class="col-3 col-md-2 mx-auto d-flex flex-column justify-content-center py-3">
+        <img src="img/9.png" class="w-50 py-2 mx-auto d-flex justify-content-center tile" alt="icon" />
+        <h5 class="productsansbld fs-6 my-auto py-1 mx-auto text-center">
+          Live Chat
+        </h5>
+      </div>
+      <div class="col-3 col-md-2 mx-auto d-flex flex-column justify-content-center py-3">
+        <img src="img/10.png" class="w-50 py-2 mx-auto d-flex justify-content-center tile" alt="icon" />
+        <h5 class="productsansbld fs-6 my-auto py-1 mx-auto text-center">
+          Webinar
+        </h5>
+      </div>
+
+
+      <div class="col-3 col-md-2 mx-auto d-flex flex-column justify-content-center py-3 ">
+        <img src="img/11.png" class="w-50 py-2 mx-auto d-flex justify-content-center tile" alt="icon" />
+        <h5 class="productsansbld fs-6 my-auto py-1 mx-auto text-center">
+          Multiple Booths
+        </h5>
+      </div>
+      <div class="col-3 col-md-2 mx-auto d-flex flex-column justify-content-center py-3 ">
+        <img src="img/12.png" class="w-50 py-2 mx-auto d-flex justify-content-center tile" alt="icon" />
+        <h5 class="productsansbld fs-6 my-auto py-1 mx-auto text-center">
+          Event Support
+        </h5>
+      </div>
+      <div class="col-3 col-md-2 mx-auto d-flex flex-column justify-content-center py-3 ">
+        <img src="img/13.png" class="w-50 py-2 mx-auto d-flex justify-content-center tile" alt="icon" />
+        <h5 class="productsansbld fs-6 my-auto py-1 mx-auto text-center">
+          Multiple Profiles
+        </h5>
+      </div>
+      <div class="col-3 col-md-2 mx-auto d-flex flex-column justify-content-center py-3 ">
+        <img src="img/14.png" class="w-50 py-2 mx-auto d-flex justify-content-center tile" alt="icon" />
+        <h5 class="productsansbld fs-6 my-auto py-1 mx-auto text-center">
+          Survey and Polls
+        </h5>
+      </div>
+      <div class="col-3 col-md-2 mx-auto d-flex flex-column justify-content-center py-3 ">
+        <img src="img/15.png" class="w-50 py-2 mx-auto d-flex justify-content-center tile" alt="icon" />
+        <h5 class="productsansbld fs-6 my-auto py-1 mx-auto text-center">
+          Booth Customization
+        </h5>
+      </div>
+
+      <div class="col-3 col-md-2 mx-auto d-flex flex-column justify-content-center py-3 ">
+        <img src="img/16.png" class="w-50 py-2 mx-auto d-flex justify-content-center tile" alt="icon" />
+        <h5 class="productsansbld fs-6 my-auto py-1 mx-auto text-center">
+          Dynamic Widget Setup
+        </h5>
+      </div>
+      <div class="col-3 col-md-2 mx-auto d-flex flex-column justify-content-center py-3 ">
+        <img src="img/17.png" class="w-50 py-2 mx-auto d-flex justify-content-center tile" alt="icon" />
+        <h5 class="productsansbld fs-6 my-auto py-1 mx-auto text-center">
+          Marketing Platforms
+        </h5>
+      </div>
+      <div class="col-3 col-md-2 mx-auto d-flex flex-column justify-content-center py-3 ">
+        <img src="img/18.png" class="w-50 py-2 mx-auto d-flex justify-content-center tile" alt="icon" />
+        <h5 class="productsansbld fs-6 my-auto py-1 mx-auto text-center">
+          Invite Bulk Visitor
+        </h5>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- what we do -->
+  <div class="container d-flex flex-column flex-md-row pt-5">
+    <div class="col-12 col-md-5 my-auto">
+      <img src="img/vrevent.png" class="w-100" alt="" />
+    </div>
+
+    <div class="col-12 col-md-7   my-auto bg-white shadow-lg py-md-5 py-3  rounded-3">
+      <!-- <h4 class="hding">What we do</h4> -->
+      <img src="img/wwdttl.png" class="col-1 ms-2 ms-md-5 w-25 px-md-0" alt="" />
+
+      <div class="px-2 px-md-5 pt-3 my-auto justify-content-around">
+        <h1 class="productsansbld fs-2">
+          Host interactive and personalized sessions on the go
+        </h1>
+        <p class="interlight">
+          Easiest way to host virtual event & organize breakout sessions for
+          your attendees like never before. <br /><br />
+          <span class="intermedium">
+            Most of the online events are basically webinars while perigvent's
+            helps organizations reach global audiences. Start hosting amazing
+            online events, trade shows, exhibition & more.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- industries section -->
+  <div class="container d-flex flex-column flex-md-row pt-5">
+    <div class="col-12 col-md-7 bg-white shadow-lg pt-md-5 py-md-5 py-3 z-3 rounded-3">
+      <!-- <h4 class="hding">What we do</h4> -->
+      <img src="img/indttl.png" class="col-1 ms-2 ms-md-5 w-25  px-md-0" alt="" />
+
+      <div class="px-2 px-md-5 pt-3 my-auto justify-content-around">
+        <h1 class="productsansbld fs-2">
+          We provide great services for following
+          <span style="color: #e0922f">industries</span>
+        </h1>
+        <img src="img/blocks.png" class="w-100 d-none d-md-flex" alt="" />
+        <img src="img/blocksmvw.png" class="w-100 d-flex d-md-none px-3" alt="" />
+      </div>
+    </div>
+
+    <div class="col-12 col-md-5 pt-3 my-auto">
+      <img src="img/services.png" class="w-100" alt="" />
+    </div>
+  </div>
+
+  <!-- About us section -->
+  <div class="container d-flex flex-column my-5 flex-md-row pt-5 bg-white shadow-lg py-5 rounded-3 z-3">
+    <div class="col-12 col-md-5 my-auto">
+      <img src="img/about-us 1.png" class="w-50 d-flex mx-auto my-auto" alt="" />
+    </div>
+
+    <div class="col-12 col-md-7 pt-3 pt-md-0 my-auto">
+      <!-- <h4 class="hding">What we do</h4> -->
+      <img src="img/abtusttl.png" class="col-1 ms-2 ms-md-5 w-25 px-3 px-md-0" alt="" />
+
+      <div class="px-2 px-md-5 pt-3 my-auto justify-content-around">
+        <h1 class="productsansbld fs-2">
+          Perigvent's vision is to build the intelligence virtual event
+          experience
+        </h1>
+        <p class="interlight">
+          The Perigvent is virtual event planners and exhibitor for large
+          scale industries and insights for key stakeholders such as event
+          organisers, and sponsors to track attendee engagement, lead quality
+          and other event-related data.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- fotter -->
+  <footer class="container-fluid" style="background-color: #252f3e">
+    <div class="d-flex flex-wrap container py-5">
+      <div class="col col-md-1"></div>
+
+      <div class="col-12 col-md">
+        <img src="img/Perigvent_Logo 1.png" class="w-75" alt="" />
+        <p class="interlight mt-3 text-white">
+          The Perigvent is virtual event planners and exhibitor for large
+          scale industries and stakeholders such as event organisers, and
+          sponsors to track attendee engagement, lead quality and other
+          event-related data.
+        </p>
+        <!-- <h3>Hello</h3> -->
+      </div>
+
+      <div class="col col-md-1"></div>
+
+      <div class="col-6 col-md-2 mx-auto">
+        <img src="img/ftrlinkimg.png" class="w-75" alt="" />
+        <div>
+          <ul class="mt-3" style="line-height: 30px">
+            <li class="text-white">
+              <a href="" style="text-decoration: none" class="text-white">Home</a>
+            </li>
+            <li class="text-white">
+              <a href="" style="text-decoration: none" class="text-white">About Us</a>
+            </li>
+            <li class="text-white">
+              <a href="" style="text-decoration: none" class="text-white">Features</a>
+            </li>
+            <li class="text-white">
+              <a href="" style="text-decoration: none" class="text-white">Blog</a>
+            </li>
+            <li class="text-white">
+              <a href="" style="text-decoration: none" class="text-white">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col col-md-1"></div>
+
+      <div class="col-6 col-md-2 mx-auto">
+        <img src="img/ftrctusimg.png" class="w-75" alt="" />
+        <div class="mt-3 d-flex mt-3">
+          <a href="" style="text-decoration: none" class="tile text-white"><img src="img/facebook.png" class="w-50"
+              alt="" /></a>
+          <a href="" style="text-decoration: none" class="tile text-white"><img src="img/twitter.png" class="w-50"
+              alt="" /></a>
+          <a href="" style="text-decoration: none" class="tile text-white"><img src="img/linkedin.png" class="w-50"
+              alt="" /></a>
+        </div>
+        <h5 class="text-white mt-4 fs-6 interlight">
+          Don’t miss to follow us on social media
+        </h5>
+      </div>
+
+      <div class="col col-md-1"></div>
+    </div>
+
+    <div class="container-fluid" style="background-color: #414a57">
+      <div style="background-color: #414a57" class="container">
+        <h6 class="text-white py-2 d-flex justify-content-center">
+          Copyright © 2021, All Right Reserved
+          <span style="color: #e0922f">Perigvent</span>
+        </h6>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    function openPage(pageName, elmnt, color) {
+      var i, tabcontent, tablinks;
+      var tablk = document.querySelector(".tablink");
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+
+    document.getElementById("defaultOpen").click();
+  </script>
+</body>
+
+</html>
